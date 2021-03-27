@@ -10,7 +10,7 @@ var wwwRoot = path.normalize(__dirname + '/app')
 
 // Create Route
 app.get('/',(req,res,next)=>{
-    res.sendFile(wwwRoot + '/html/index.html')
+    res.sendFile(wwwRoot + '/index.html')
 })
 app.get('/:id',(req,res,next)=>{
     res.sendFile(wwwRoot + '/html/videoPlayer.html')
