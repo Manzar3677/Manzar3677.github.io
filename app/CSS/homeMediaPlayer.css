@@ -1,0 +1,161 @@
+body,html{
+    overflow-x: hidden;
+}
+.meida_brand{
+    width: 40px;
+    margin-left: 50px;
+}
+.mr-80{
+    margin-right: 80px;
+}
+.brand_title{
+    margin-left: 10px;
+    position: relative;
+    top: -14px;
+}
+.dropdown-menu{
+    cursor: pointer;
+}
+body{
+    overflow-x: hidden;
+}
+
+.bg-light{
+    box-shadow: 0 0 10px #333;
+}
+
+.bg-dark{
+    box-shadow: 0 0 10px #ad9f9f;
+}
+
+.video-list{
+    margin-top:100px;
+    overflow-x:hidden;
+}
+.img-thumnail{
+    width: 100%;
+    height: 200px;
+    background: #f8f9fa;
+    outline: none;
+    border: none;
+}
+.thumb_icon{
+    width:40px;
+    border-radius: 50%;
+}
+.video_title,.video_view,.video_date{
+   margin-left: 2px;
+}
+img,h6{
+    cursor: pointer;
+}
+.title_h6{
+    line-height: 1.5em;
+}
+
+/* .all,.bollywood,.comedy,.angular,.dance{
+    margin:2px;
+} */
+
+
+.footer-bg{
+    background: #f8f9fa;
+}
+.copyright-text{
+    padding: 15px 0;
+    margin-bottom: 15px;
+    color:#333;
+}
+.offcanvas{
+    background-image: url("https://store-images.s-microsoft.com/image/apps.16285.14618985536919905.552c0017-6644-49a8-8467-8f7b34ce0428.30ad6b05-16d9-4d5e-a242-43107708a16a?mode=scale&q=90&h=1080&w=1920");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+.fa-whatsapp{
+    background-color: rgb(19, 110, 19);
+    border-radius: 50%;
+}
+
+.fa-twitter{
+    background-color: rgb(40, 137, 218);
+    border-radius: 50%;
+}
+
+.fa-facebook{
+    background-color: rgb(23, 54, 228);
+    border-radius: 50%;
+}
+
+.fa-instagram{
+    background-color: rgba(218, 35, 105, 0.712);;
+    border-radius: 50%;
+}
+
+.shareButton{
+    padding: 20px 10px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+ .left-2,.left-1,.right-2,.right-1{
+    right:-180px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+  }
+  .left-2{
+    animation-name: animation2;
+  }
+  .left-1{
+    animation-name: animation1;
+  }
+  .left-1,.left-2,.right-2,.right-1{
+    animation-duration: 3s;  
+    animation-delay: 2s;
+    animation-fill-mode: both;
+  }
+
+  .right-2{
+    animation-name: animation3;
+  }
+  .right-1{
+    animation-name: animation4;
+  }
+  
+  @keyframes animation2 {
+    from {right: -180px;}
+    to {right: 20px;}
+  }
+
+  @keyframes animation1 {
+    from {right: -103px;}
+    to {right: 10px;}
+  }
+
+  @keyframes animation3 {
+    from {left: -178px;}
+    to {left: 20px;}
+  }
+
+  @keyframes animation4 {
+    from {left: -104px;}
+    to {left: 10px;}
+  }
+
+@media(max-width:767px){
+    .btn-container{
+        overflow-x:scroll;
+    }
+    .small-mflex .col-md-2{
+        width:14%;
+    }
+    .small-mflex .col-md-10{
+        width:82%;
+    }
+    .video-list{
+        margin-top:75px;
+    }
+}

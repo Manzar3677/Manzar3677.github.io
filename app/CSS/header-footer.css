@@ -1,0 +1,53 @@
+.meida_brand{
+    width: 40px;
+    margin-left: 50px;
+}
+.mr-80{
+    margin-right: 80px;
+}
+.brand_title{
+    margin-left: 10px;
+    position: relative;
+}
+.dropdown-menu{
+    cursor: pointer;
+}
+body{
+    overflow-x: hidden;
+}
+
+.bg-light{
+    box-shadow: 0 0 10px #333;
+}
+
+.bg-dark{
+    box-shadow: 0 0 10px #ad9f9f;
+}
+
+.footer-bg{
+    background: #f8f9fa;
+}
+.copyright-text{
+    padding: 15px 0 0;
+    margin-bottom: 15px;
+    color:#333;
+}
+.sa_hover_container{
+    cursor: pointer;
+}
+
+@media(max-width:767px){
+  .navbar-text{
+      position: absolute;
+      right: 0;
+  }
+  .meida_brand {
+    width: 30px;
+    margin-left: 20px;
+}
+.brand_title {
+    top:-8px;
+    font-size: 15px;
+}
+
+}

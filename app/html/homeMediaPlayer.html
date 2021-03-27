@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Media Player with MH classic">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Manzar Hussain">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Media MH Classic</title>
+    <!--Bootstrap 5 css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!--Bootstrap 5 Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.1.0/mustache.min.js"></script>
+   
+    <link href="../CSS/homeMediaPlayer.css" rel="stylesheet">
+    
+    <link href="../CSS/header-footer.css" rel="stylesheet">
+    <script src="../JS/homeMediaPlayer.js"></script>
+    
+    <link rel='stylesheet' id='divi-style-css'  href='//edgewebpages.com/wp-content/cache/wpfc-minified/dvf76w5k/8ei5s.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='et-builder-googlefonts-cached-css'  href='https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic|Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic&#038;subset=cyrillic,greek,vietnamese,latin,greek-ext,latin-ext,cyrillic-ext&#038;display=swap' type='text/css' media='all' />
+    <link rel='stylesheet' id='owl_carousel_css-css'  href='//edgewebpages.com/wp-content/cache/wpfc-minified/g1pcr8xz/8ei5s.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='owl_theme_css-css'  href='//edgewebpages.com/wp-content/cache/wpfc-minified/epdhvc86/8ei5s.css' type='text/css' media='all' />
+
+    <script type='text/javascript' src='https://edgewebpages.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+    <style>
+      
+      .owl-stage-outer, .owl-stage{
+        height: 300px!important;
+        }
+    </style>
+   </head>
+   <body class="overflow-visible">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar">
+       
+      </nav>
+
+      <div>
+
+       
+      <div class="et_pb_with_border et_pb_fullwidth_section et_section_regular" >
+      <div class="et_pb_module et_pb_fullwidth_code et_pb_fullwidth_code_1">
+      <div>
+        <div class='white' style='background:rgb(153, 153, 153); height: 300px; border:solid 0px rgba(0,0,0,0); border-radius:0px; padding:0px 0px 0px 0px;'>
+        <div id='menu_slider' class='owl-carousel sa_owl_theme autohide-arrows' data-slider-id='menu_slider' style='visibility:hidden; height: 300px;'>
+        
+        <!-- <div id='menu_slider_slide05' class='sa_hover_container' style='padding:0% 0%; margin:0px 0%; background-image:url(&quot;https://edgewebpages.com/wp-content/uploads/2019/01/menu_slide5.jpg&quot;); background-position:center center; background-size:cover; background-repeat:no-repeat; height:300px!important;'>
+        
+        </div> -->
+
+        <!-- <div id='menu_slider_slide01' class='sa_hover_container' style='padding:0% 0%; margin:0px 0%;height: 300px; background-image:url(&quot;https://edgewebpages.com/wp-content/uploads/2019/01/menu_slide1.jpg&quot;); background-position:center center; background-size:cover; background-repeat:no-repeat; '>
+       </div>
+
+        <div id='menu_slider_slide04' class='sa_hover_container' style='padding:0% 0%; margin:0px 0%;height: 300px; background-image:url(&quot;https://edgewebpages.com/wp-content/uploads/2019/01/menu_slide4.jpg&quot;); background-position:center center; background-size:cover; background-repeat:no-repeat; '>
+        </div>
+
+        <div id='menu_slider_slide02' class='sa_hover_container' style='padding:0% 0%; margin:0px 0%;height: 300px; background-image:url(&quot;https://edgewebpages.com/wp-content/uploads/2019/01/menu_slide2.jpg&quot;); background-position:center center; background-size:cover; background-repeat:no-repeat; '>
+       
+        </div>
+
+        <div id='menu_slider_slide03' class='sa_hover_container' style='padding:0% 0%; margin:0px 0%;height: 300px; background-image:url(&quot;https://edgewebpages.com/wp-content/uploads/2019/01/menu_slide3.jpg&quot;); background-position:center center; background-size:cover; background-repeat:no-repeat; '>        
+        </div> -->
+
+        </div>
+        </div>
+
+        <!-- <script src="../JS/common.js"></script> -->
+        <script type='text/javascript'>
+        jQuery(document).ready(function() {
+        jQuery('#menu_slider').owlCarousel({
+        responsive:{
+        0:{ items:1 },
+        480:{ items:2 },
+        768:{ items:2 },
+        980:{ items:3 },
+        1200:{ items:3 },
+        1500:{ items:3 }
+        },
+        autoplay : false,
+        autoplayHoverPause : false,
+        smartSpeed : 200,
+        fluidSpeed : 200,
+        autoplaySpeed : 200,
+        navSpeed : 200,
+        dotsSpeed : 200,
+        loop : true,
+        nav : true,
+        navText : ['Previous','Next'],
+        dots : false,
+        responsiveRefreshRate : 200,
+        slideBy : 1,
+        mergeFit : true,
+        autoHeight : false,
+        mouseDrag : true,
+        touchDrag : true
+        });
+        jQuery('#menu_slider').css('visibility', 'visible');
+        sa_resize_menu_slider();
+        window.addEventListener('resize', sa_resize_menu_slider);
+        function sa_resize_menu_slider() {
+        var min_height = '120';
+        var win_width = jQuery(window).width();
+        var slider_width = jQuery('#menu_slider').width();
+        if (win_width < 480) {
+        var slide_width = slider_width / 1;
+        } else if (win_width < 768) {
+        var slide_width = slider_width / 2;
+        } else if (win_width < 980) {
+        var slide_width = slider_width / 2;
+        } else if (win_width < 1200) {
+        var slide_width = slider_width / 3;
+        } else if (win_width < 1500) {
+        var slide_width = slider_width / 3;
+        } else {
+        var slide_width = slider_width / 3;
+        }
+        slide_width = Math.round(slide_width);
+        var slide_height = '0';
+        if (min_height == 'aspect43') {
+        slide_height = (slide_width / 4) * 3;				
+        slide_height = Math.round(slide_height);
+        } else if (min_height == 'aspect169') {
+        slide_height = (slide_width / 16) * 9;				
+        slide_height = Math.round(slide_height);
+        } else {
+        slide_height = (slide_width / 100) * min_height;				
+        slide_height = Math.round(slide_height);
+        }
+        jQuery('#menu_slider .owl-item .sa_hover_container').css('min-height', 300+'px');
+        }
+        var owl_goto = jQuery('#menu_slider');
+        jQuery('.menu_slider_goto1').click(function(event){
+        owl_goto.trigger('to.owl.carousel', 0);
+        });
+        jQuery('.menu_slider_goto2').click(function(event){
+        owl_goto.trigger('to.owl.carousel', 1);
+        });
+        jQuery('.menu_slider_goto3').click(function(event){
+        owl_goto.trigger('to.owl.carousel', 2);
+        });
+        jQuery('.menu_slider_goto4').click(function(event){
+        owl_goto.trigger('to.owl.carousel', 3);
+        });
+        jQuery('.menu_slider_goto5').click(function(event){
+        owl_goto.trigger('to.owl.carousel', 4);
+        });
+        var resize_2596 = jQuery('.owl-carousel');
+        resize_2596.on('initialized.owl.carousel', function(e) {
+        if (typeof(Event) === 'function') {
+        window.dispatchEvent(new Event('resize'));
+        } else {
+        var evt = window.document.createEvent('UIEvents');
+        evt.initUIEvent('resize', true, false, window, 0);
+        window.dispatchEvent(evt);
+        }
+        });
+        });
+        </script>
+        </div>
+        </div> 
+        </div> 
+        
+        <script type='text/javascript' src='https://edgewebpages.com/wp-content/plugins/slide-anything/owl-carousel/owl.carousel.min.js?ver=2.2.1' id='owl_carousel_js-js'></script>
+        
+        <!--video Container-->
+        <div class="container-fluid video-list mt-5">
+          <!-- <div class="row searchByCategory my-3">
+               <div class="col d-flex btn-container">
+                  <button type="button" class="all btn btn-light" (click)="getAllData()">All</button>
+                  <button type="button" class="bollywood btn btn-light" (click)="getBollywoodData()">Bollywood</button>
+                  <button type="button" class="comedy btn btn-light" (click)="getComedyData()">Comedy</button>
+                  <button type="button" class="angular btn btn-light" (click)="getAngularData()">Angular</button>
+                  <button type="button" class="dance btn btn-light" (click)="getDanceData()">Dance</button>
+               </div>
+          </div> -->
+        <div class="row" id="videoContainer"> </div>
+      </div>
+
+      <!--footer-->
+      <div class="row footer-bg" id="footer">
+       
+      </div>
+
+      <!--Share section-->
+      
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasBottomLabel"></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small text-center mt-5">
+          
+          <span class="fa-stack fa-3x twitter">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+          
+          <span class="fa-stack fa-3x whatsapp">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+          </span>
+          
+         <button type="button" class="btn btn-danger btn-md shareButton">Share Now <i class="fa fa-share" aria-hidden="true"></i></button>
+
+         <span class="fa-stack fa-3x facebook">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+        </span>
+        
+        <span class="fa-stack fa-3x instagram">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+        </span>
+        </div>
+      </div>
+
+      <button class="shareBtn" id="shareBtn" style="position: absolute; bottom: 0; border: none;outline: none; color:#fff;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Toggle bottom offcanvas</button>
+      <script src="../JS/common.js"></script>
+      <script src="../JS/headerandfooter.js"></script>
+   </body>
+</html>
