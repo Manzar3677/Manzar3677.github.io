@@ -8,7 +8,7 @@ apiUrl = "https://raw.githubusercontent.com/Manzar3677/test/master";
 callApi.queryUrl = function(url, body, callback){
     body = body || {};
     body._method = body._method || 'GET';
-    $.ajax({
+    jQuery.ajax({
         "async":true,
         "crossDomain":true,
         "dataType":"json",

@@ -7,7 +7,8 @@ const app = express();
 
 app.use('/', express.static(path.join(__dirname, 'app')));
 var wwwRoot = path.normalize(__dirname + '/app')
-
+// const HTML_DIR = path.join(__dirname, '/public/')
+// app.use(express.static(HTML_DIR))
 // Create Route
 app.get('/',(req,res,next)=>{
     res.sendFile(wwwRoot + '/index.html')

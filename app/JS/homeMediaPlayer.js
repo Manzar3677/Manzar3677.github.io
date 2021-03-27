@@ -1,15 +1,15 @@
 'use strict';
 
 
-$(document).ready(function () {
+jQuery(document).ready(function () {
 
-    $('.navbar-light').addClass('bg-light');
+    jQuery('.navbar-light').addClass('bg-light');
 
-    $("ul[id*=mode] li").click(function () {
-        if($(this).text() == "Night Mode"){
+    jQuery("ul[id*=mode] li").click(function () {
+        if(jQuery(this).text() == "Night Mode"){
             console.log("NM");
-            $('body').css("background-color", "#333");
-            $('.footer-bg').css("background-color", "#000");
+            jQuery('body').css("background-color", "#333");
+            jQuery('.footer-bg').css("background-color", "#000");
             $('.navbar-light').removeClass('bg-light');
             $('.navbar-light').addClass('bg-dark');
             $('.brand_title ,.modeList,.title_h6,.copyright-text').css('color','#fff');
